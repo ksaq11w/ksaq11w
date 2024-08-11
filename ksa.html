@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTX IPA Signer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RTX IPA Signer</h1>
+        <p>Upload your IPA file to sign it with a free certificate.</p>
+        <form id="uploadForm" action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="ipaFile" accept=".ipa" required>
+            <input type="submit" value="Upload and Sign">
+        </form>
+        <div id="status"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
